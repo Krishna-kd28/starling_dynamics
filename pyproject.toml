@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starling_dynamics"
+version = "1.0.0"
+description = "Batched quadrotor dynamics + IMU simulation (PyTorch)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["torch>=1.12", "numpy"]
+
+[tool.setuptools.packages.find]
+include = ["starling_dynamics*"]
